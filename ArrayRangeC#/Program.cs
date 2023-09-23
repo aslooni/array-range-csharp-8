@@ -1,0 +1,13 @@
+﻿int[] array = { 1, 3, 5, 7, 9, 22, 99, 98 };
+Console.WriteLine($"Array is: {{{string.Join(',', array)}}}");
+Console.WriteLine($"(3) =>      {{{string.Join(',', array[3])}}}");
+Console.WriteLine($"(^3) =>     {{{string.Join(',', array[^3])}}}");
+Console.WriteLine($"(^3..) =>   {{{string.Join(',', array[^3..])}}}");
+Console.WriteLine($"(..^3) =>   {{{string.Join(',', array[..^3])}}}");
+Console.WriteLine($"(..) =>     {{{string.Join(',', array[..])}}}");
+Console.WriteLine($"(2..5) =>   {{{string.Join(',', array[2..5])}}}");
+Console.WriteLine($"(4..) =>    {{{string.Join(',', array[4..])}}}");
+Console.WriteLine($"(..4) =>    {{{string.Join(',', array[..4])}}}");
+Console.WriteLine($"(2..^3) =>    {{{string.Join(',', array[2..^3])}}}");
+Console.WriteLine($"(^4..^2) =>    {{{string.Join(',', array[^4..^2])}}}");
+Console.ReadKey();
